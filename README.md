@@ -1,7 +1,5 @@
 # WebCement
 
-Labs 2 + 3
-
 ## Cement
 
 Це - 2 лабораторна робота
