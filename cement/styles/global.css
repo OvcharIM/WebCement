@@ -1,0 +1,89 @@
+@import url("./header.css");
+@import url("./main.css");
+@import url("./about.css");
+@import url("./services.css");
+@import url("./reviews.css");
+@import url("./contacts.css");
+@import url("./footer.css");
+
+@font-face {
+  font-family: "Caladea";
+  src: url("./fonts/Caladea-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Caladea";
+  src: url("./fonts/Caladea-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Caladea";
+  src: url("./fonts/Caladea-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Caladea";
+  src: url("./fonts/Caladea-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+body {
+  font-family: "Caladea", Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+  font-size: 48px;
+}
+
+p {
+  font-size: 19px;
+}
+
+/* Стили для планшетів (768px – 1023px) */
+@media (max-width: 1023px) {
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Стили для мобільних пристроїв (до 768px) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container {
+    padding: 5px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
