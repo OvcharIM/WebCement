@@ -1,0 +1,107 @@
+/* General Styles for the Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+  height: 100px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+header h2 {
+  font-size: 30px;
+  color: #f6d6d5;
+}
+
+header img {
+  width: 100px;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #f6d6d5;
+  position: relative;
+  font-weight: bold;
+}
+
+.menu ul a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #f6d6d5;
+  transition: width 0.3s ease;
+}
+
+.menu ul a:hover::after {
+  width: 100%;
+}
+
+/* Responsive Styles */
+/* Mobile Styles for the Header */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    height: auto;
+    position: relative;
+  }
+
+  .header-logo {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  header h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  header img {
+    width: 60px;
+  }
+
+  .menu {
+    width: 100%;
+  }
+
+  .menu ul {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu ul li {
+    text-align: center;
+  }
+
+  .menu ul a {
+    font-size: 16px;
+  }
+}
